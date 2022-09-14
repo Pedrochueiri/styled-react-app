@@ -11,7 +11,7 @@ export const DivLista = styled.div`
 `
 
 //CRIANDO O MÓDULO DE ESTILOS
-export const DivTarefa = styled.div`
+export const DivTarefas = styled.div`
     background-color : #ffb;
     border : 2px solid #333;
     box-shadow: 5px 5px 5px #333;
