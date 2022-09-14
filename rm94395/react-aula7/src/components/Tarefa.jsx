@@ -1,21 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
-
-//CRIANDO O MÓDULO DE ESTILOS
-const DivTarefa = styled.div`
-    background-color : #ffb;
-    border : 2px solid #333;
-    box-shadow: 5px 5px 5px #333;
-    padding: 20px;
-    text-align : center;
-    width : 350px;
-    height : 200px;
-
-    h2,p{
-      padding-bottom : 10px;
-    }
-
-`
+import { DivTarefa } from '../style/styled'
 
 export default function Tarefa() {
   return (
