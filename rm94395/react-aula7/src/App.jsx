@@ -1,8 +1,11 @@
 import React from 'react'
-import './index.css'
+import ListaTarefas from './components/ListaTarefas'
 
 export default function App() {
   return (
-    <h1>Estudo de Styled Components</h1>
+    <div>
+        <h1>ESTUDO SOBRE STYLED-COMPONENTS</h1>
+        <ListaTarefas/>
+    </div>
   )
 }
