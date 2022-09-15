@@ -6,9 +6,7 @@ export default function App() {
   return (
     <>
         <h1>ESTUDO SOBRE STYLED-COMPONENTS</h1>
-
         <ListaTarefa/>
-
     </>
   )
 }
