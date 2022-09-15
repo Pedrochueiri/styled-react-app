@@ -1,29 +1,37 @@
-import React, { useState } from 'react'
-import Tarefa from '../tarefa/Tarefa'
-import { DivLista } from '../styled'
+import React from "react";
+import Tarefa from "./Tarefa";
+import { DivLista } from "../style/styled";
+import { useState } from "react";
 
 export default function ListaTarefas() {
-  const[tarefa, setTarefa] = useState([
+  const [tarefa, setTarefa] = useState([
+    {
+      titulo: "Lista de Pagamento",
 
-   {
-    titulo: "Lista de pagamento",
-    setor: "Dep. Vendas",
-    descrição: "Levantar os pagamentos das vendas"
-  },
-  {
-    titulo: "Planilha de salários",
-    setor: "Dep. Pessoal",
-    descrição: "Gerar planilha"
-  }
-])
+      setor: "Dep. Vendas",
 
+      descricao: "Levar os pagamentos pro lado de lá",
+    },
+
+    {
+      titulo: "Lista de Gente",
+
+      setor: "Dep. Gente",
+
+      descricao: "Levar os gente pro lado de lá",
+    },
+  ]);
 
   return (
     <DivLista>
-        <p>Lista de tarefas</p>
-        <Tarefa/>
-        <Tarefa/>
-        <Tarefa/>
+      {tarefa.map((tar, i) => (
+        <Tarefa
+          key={i}
+          titulo={tar.titulo}
+          setor={tar.setor}
+          descricao={tar.descricao}
+        />
+      ))}
     </DivLista>
-  )
+  );
 }
