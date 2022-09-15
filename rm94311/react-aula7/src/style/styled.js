@@ -9,9 +9,6 @@ export const DivLista = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
- 
-  
 `
 
 export const DivTarefa = styled.div`
