@@ -1,8 +1,12 @@
 import React from "react";
+import ListaTarefas from "./components/ListaTarefas";
 
 function App() {
   return (
-    <h1>oi</h1>
+    <main>
+      <h1>ESTUDO SOBRE STYLED-COMPONENTS</h1>
+      <ListaTarefas />
+    </main>
   );
 }
 
