@@ -1,5 +1,5 @@
 import React from 'react'
-import ListaTarefas from './components/listaTarefas/ListaTarefas';
+import ListaTarefas from './components/ListaTarefas';
 
 export default function App() {
   return (
